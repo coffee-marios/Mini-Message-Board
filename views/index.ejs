@@ -14,6 +14,25 @@
     <%- include('./partials/navbar') %>
 
         <h2>PAGE: INDEX</h2>
+        <ul>
+            <% messages.forEach(m=> { %>
+                <li>
+                    <ul>
+                        <li>
+                            <%= m.text %>
+                        </li>
+                        <li>
+                            <%= m.user %>
+                        </li>
+                        <li>
+                            <%= m.added %>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <% }) %>
+        </ul>
 </body>
 
 </html>

@@ -11,6 +11,7 @@ app.set("view engine", "ejs");
 
 // If your CSS is inside a folder named 'public'
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/", indexRouter);
 app.use("/new", newRouter);

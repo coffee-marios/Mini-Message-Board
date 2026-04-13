@@ -1,3 +1,22 @@
 * {
     background-color: cadetblue;
 }
+
+
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}

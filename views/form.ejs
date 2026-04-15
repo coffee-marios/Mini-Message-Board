@@ -12,16 +12,17 @@
         <h1>New Message</h1>
 
         <form action="/new" method="POST" class="form-example">
-            <div class="form-example">
-                <label for="message">message: </label>
+            <div class="form-input">
+                <label for="message">Message: </label>
                 <input type="text" name="message" id="message" required />
             </div>
-            <div class="form-example">
-                <label for="user">user: </label>
+            <div class="form-input">
+                <label for="user">User: </label>
                 <input type="text" name="user" id="user" required />
             </div>
-            <div class="form-example">
-                <input type="submit" value="Subscribe!" />
+
+            <div>
+                <input class="form-submit" type="submit" value="Send" />
             </div>
         </form>
 </body>

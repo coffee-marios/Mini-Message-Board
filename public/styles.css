@@ -1,6 +1,62 @@
-* {
+body {
     background-color: cadetblue;
+    margin: auto;
+    text-align: center;
 }
+
+.site-nav {
+    background-color: burlywood;
+    list-style: none;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 1em;
+    background-color: aquamarine;
+    margin: 1em auto;
+    width: fit-content;
+}
+
+.messages-display {
+    background-color: black;
+}
+
+ul.inside-list>li {
+    background-color: yellow;
+    padding: 5px;
+}
+
+ul.inside-list>li:first-child {
+    background-color: blueviolet;
+    padding: 12px;
+}
+
+nav>ul {
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    width: 100%;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
 
 
 form.form-example {
@@ -19,4 +75,50 @@ input {
 
 label {
     padding-right: 10px;
+}
+
+form {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2em;
+    box-sizing: border-box;
+    background-color: rgba(10, 47, 160, 0.916);
+
+
+
+
+}
+
+.form-input {
+    /* we create our grid */
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: minmax(10px, 1fr) 2fr;
+    font: bold 1.3em sans-serif;
+    margin-bottom: 25px;
+    color: wheat;
+}
+
+.form-submit {
+    margin-top: 5px;
+}
+
+.form-submit {
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: fantasy;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    background-color: rgb(117, 255, 104);
+    cursor: pointer;
+    transform: rotate(-1.5deg);
+    color: black;
+    border-radius: 20%;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+    background: black;
+    color: white;
 }

@@ -7,32 +7,37 @@
 </head>
 
 <body>
-    <div class="site-title">
-        <h1>Mini Message Board</h1>
-    </div>
+
 
     <%- include('./partials/navbar') %>
 
         <h2>PAGE: INDEX</h2>
-        <ul>
-            <% messages.forEach(m=> { %>
-                <li>
-                    <ul>
-                        <li>
-                            <%= m.text %>
-                        </li>
-                        <li>
-                            <%= m.user %>
-                        </li>
-                        <li>
-                            <%= m.added %>
-                        </li>
+        <div>
+            <ul class="messages-display">
+                <% messages.forEach(m=> { %>
+                    <li>
+                        <ul class="inside-list">
+                            <li>
 
-                    </ul>
-                </li>
+                                <%= m.text %>
 
-                <% }) %>
-        </ul>
+
+                            </li>
+                            <li>
+                                <br>
+                                <%= m.user %>
+                                    <br><br>
+                                    <%= m.added %>
+
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <% }) %>
+            </ul>
+        </div>
 </body>
 
 </html>

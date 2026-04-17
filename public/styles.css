@@ -122,3 +122,24 @@ form {
     background: black;
     color: white;
 }
+
+.user {
+    background-color: yellow;
+    width: fit-content;
+    margin: auto;
+    padding: 1em;
+    border: 2px solid black;
+}
+
+.details {
+    background-color: coral;
+    width: fit-content;
+    margin: auto;
+    padding: 1em;
+    border: 2px solid black;
+}
+
+.open {
+    padding: 5px;
+    background-color: brown;
+}

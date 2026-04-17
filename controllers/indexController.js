@@ -6,4 +6,12 @@ async function indexControl(req, res) {
   return res.render("index", { messages: messagesArray });
 }
 
-module.exports = { indexControl };
+function singleMessage(req, res) {
+  const id = req.params.id;
+  const msg = messages.messages[id];
+
+  //console.log("msg", messages);
+  return res.render("message", { msg });
+}
+
+module.exports = { indexControl, singleMessage };

@@ -14,23 +14,23 @@
         <h2>PAGE: INDEX</h2>
         <div>
             <ul class="messages-display">
-                <% messages.forEach(m=> { %>
+                <% messages.forEach((m,index)=> { %>
                     <li>
                         <ul class="inside-list">
                             <li>
-
                                 <%= m.text %>
-
-
                             </li>
                             <li>
                                 <br>
                                 <%= m.user %>
                                     <br><br>
-                                    <%= m.added %>
 
+                                    <%= m.added.getMonth() %> / <%= m.added.getDate() %> /
+                                            <%= m.added.getFullYear() %>
                             </li>
 
+
+                            <a class="open" href="message/<%= index %>">open</a>
 
                         </ul>
                     </li>

@@ -1,19 +1,20 @@
-const messages = require("../db");
+const db = require("../db/queries");
 
 function showForm(req, res) {
   return res.render("form");
 }
 
-function createMessage(req, res) {
-  console.log(res);
-  // save form data
-  messages.messages.push({
-    text: req.body.message,
-    user: req.body.user,
-    added: new Date(),
+async function newUser(req, res) {
+  // render the form
+  res.render("form", {
+    title: "User list",
   });
+}
 
+async function newUserPost(req, res) {
+  const { message, username } = req.body;
+  await db.insertUsername(message, username);
   res.redirect("/");
 }
 
-module.exports = { showForm, createMessage };
+module.exports = { showForm, newUser, newUserPost };

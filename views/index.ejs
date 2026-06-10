@@ -18,15 +18,14 @@
                     <li>
                         <ul class="inside-list">
                             <li>
-                                <%= m.text %>
+                                <%= m.message %>
                             </li>
                             <li>
                                 <br>
-                                <%= m.user %>
+                                <%= m.username %>
                                     <br><br>
 
-                                    <%= m.added.getMonth() %> / <%= m.added.getDate() %> /
-                                            <%= m.added.getFullYear() %>
+
                             </li>
 
 
@@ -37,6 +36,9 @@
 
                     <% }) %>
             </ul>
+            <form action="/delete-all" method="POST">
+                <button type="submit">Delete</button>
+            </form>
         </div>
 </body>
 

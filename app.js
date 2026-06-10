@@ -16,10 +16,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", indexRouter);
 app.use("/new", newRouter);
 
-const PORT = 3000;
-app.listen(PORT, (error) => {
+const port = process.env.PORT || 3000;
+app.listen(port, (error) => {
   if (error) {
     throw error;
   }
-  console.log(`My first Express app - listening on port ${PORT}!`);
+  console.log(`My first Express app - listening on port ${port}!`);
 });

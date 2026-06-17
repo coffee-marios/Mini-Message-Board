@@ -22,4 +22,5 @@ app.listen(port, (error) => {
     throw error;
   }
   console.log(`My first Express app - listening on port ${port}!`);
+  console.log("DATABASE_URL =", process.env.DATABASE_URL);
 });
